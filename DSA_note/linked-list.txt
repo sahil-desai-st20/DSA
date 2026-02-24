@@ -1,0 +1,38 @@
+in linked list have mutie tpye have
+not cnotiue meemory allocation
+concprt -onne node  refnace  to other node same go ..
+type of list 
+1 sinnglely linked list one way poinnt  
+2 doulbey linked list nodde contain prve and next both node adeess 
+3 circle linked list it tail(last node) point the first head
+ head - first node 
+ tail - null or last node 
+ node -data + adresss
+
+
+sinnlgy list some opation 
+1- appendd 
+2- prrepand 
+3- insrt any postion 
+4- remove At any postion 
+5- find elemmrrt 
+
+1 apeened -add emlents in last 
+  if null lisst then head =new node 
+  else  travssel to end point using loop 
+  current.next is null thenn is new node 
+
+2 prrepand - add emleets add first 
+simple head vlaue go to next ,and new node vslue assign to head
+ 
+3 instet any postion   
+chek conddtion 
+it is ne out of index then no need 
+it is one 0index then do prepandd 
+0 to length for 
+  current=head,prv=null ,i=0
+  loop  up to postion
+     prv =current
+     current=current.next 
+     i incese
+ 

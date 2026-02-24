@@ -1,0 +1,22 @@
+stack is work on lifo & filo rule
+last in first out -lifo 
+filo -first in last out 
+ in ts push pop method alrday predefine just need to impllint 
+
+
+
+ tpye of 
+ Array-based stack: Use push() and pop() methods.
+
+Class-based stack: Create a Stack class with methods for operations.
+
+Linked list stack: More advanced, but useful to understand dynamic memory.
+
+
+Try solving problems like:
+
+    Reverse a string using a stack.
+
+    Check for balanced parentheses.
+
+    Evaluate postfix expressions.

@@ -1,0 +1,7 @@
+deque is whre add or remove posssible form forrntt andd rear 
+in this we use array 4 meethod 
+shift - fornt remove 
+unshift- front add 
+push - add in last 
+pop - remove form last 
+

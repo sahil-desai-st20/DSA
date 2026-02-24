@@ -1,0 +1,21 @@
+in this 
+fornt  =-1
+rear=-1
+size =0
+cpaity or max = user  
+  in  enque :
+    chekc it array not full 
+    olny one time front increse -1 to 0 first time 
+     and after that rear inncrease :
+      this.rear = (this.rear + 1) % this.capacity
+      and size inceare by 1
+ in dequeure :remove elments 
+   chke array not empty  
+   afteer that sotre item vlaue  that remove 
+   nd fornt  beocme null 
+   and after than fornt increse  :
+   this.front = (this.front + 1) % this.capacity;
+        this.size--;
+  and size derese   
+
+  

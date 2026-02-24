@@ -1,0 +1,74 @@
+A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+The first element inserted is the first one removed, similar to a line at a store.
+
+
+
+Queues are essential in web development for handling tasks in an orderly, efficient way:
+
+    Request Handling
+
+        Web servers often use queues to manage incoming HTTP requests.
+
+        Example: If too many users hit a site at once, requests are queued so they can be processed one by one.
+
+    Background Jobs
+
+        Websites use job queues (like BullMQ or RabbitMQ) to handle tasks asynchronously.
+
+        Example: Sending emails, processing payments, or generating reports without blocking the main user flow.
+
+    Message Queues
+
+        In microservices or distributed systems, queues (like Kafka or Azure Service Bus) allow services to communicate reliably.
+
+        Example: An e-commerce site queues "order placed" events so inventory, billing, and shipping services can process them independently.
+
+    Task Scheduling
+
+        Queues help schedule tasks at specific times or intervals.
+
+        Example: A queue might trigger nightly database backups or analytics processing.
+
+    Load Management
+
+        Queues prevent servers from being overwhelmed by spreading out heavy workloads.
+
+        Example: Video processing or image rendering tasks are queued and executed gradually.
+
+
+time and space ccomplexiy 
+Operation	Complexity	Notes
+Enqueue (insert)	O(1)	Constant time if using linked list or array with tail pointer.
+Dequeue (remove)	O(1)	Constant time if removing from head.
+Peek (front element)	O(1)	Direct access to the first element.
+Search	O(n)	Linear time since you may need to check all elements.
+Space	O(n)	Proportional to the number of elements stored.
+
+
+
+
+
+task  
+    Print Jobs Queue
+
+        Imagine a printer that receives multiple print requests.
+
+        Use a queue to store the print jobs (like "Doc1", "Doc2", "Doc3").
+
+        Process them in the order they arrive (FIFO).
+
+    Customer Service Queue
+
+        A website has a customer support chat system.
+
+        Each new customer is added to a queue.
+
+        Write code to add customers and serve them one by one.
+
+    Task Scheduling Queue
+
+        You have tasks like "Send Email", "Generate Report", "Backup Database".
+
+        Store them in a queue.
+
+        Dequeue and execute tasks in the order they were added.
