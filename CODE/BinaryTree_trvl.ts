@@ -70,7 +70,6 @@ class BT<T>{
     return result 
 }    
 }
-
 const root = new TNode(5);
 root.left = new TNode(3);
 root.right = new TNode(7);
