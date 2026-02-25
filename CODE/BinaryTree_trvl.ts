@@ -48,7 +48,27 @@ class BT<T>{
         }
         pos(this.root)
         return result
-    }        
+    }    
+    levelOrder(): T[] {
+    const result: T[] = [] 
+
+    if (!this.root) return result
+
+    const queue: TNode<T>[] = [this.root] 
+    
+    while (queue.length > 0) {
+        const curr = queue.shift() // Remove the first element from the queue
+        if (curr) { // Check if the current node exists
+            result.push(curr.data) // Add the current node's data to the result array
+
+            // If left or right child exists, push them into the queue for future processing
+            if (curr.left) queue.push(curr.left)
+            if (curr.right) queue.push(curr.right)
+        }
+    }
+
+    return result 
+}    
 }
 
 const root = new TNode(5);
@@ -65,3 +85,4 @@ const tree = new BT(root);
 console.log("Inorder Traversal:", tree.inorder()); // [2, 3, 4, 5, 6, 7, 8]
 console.log("Preorder Traversal:", tree.preorder()); // [5, 3, 2, 4, 7, 6, 8]
 console.log("Postorder Traversal:", tree.postorder()); // [2, 4, 3, 6, 8, 7, 5]
+console.log("Level Order Traversal:", tree.levelOrder()); // [5, 3, 7, 2, 4, 6, 8]
