@@ -24,6 +24,7 @@ class UnweightedGraph<T>{
       const visited =new Set<T>();
       const result:T[]=[];
       const queue:T[]=[start]
+       visited.add(start);
       while (queue.length>0){
          const vertex=queue.shift()
         if (vertex === undefined) continue;  // Skip undefined values
@@ -37,4 +38,29 @@ class UnweightedGraph<T>{
       }
       return result;
      }
+      dfs(startVertex: T): T[] {
+        if (!this.vertices.has(startVertex)) {
+            return [];
+        }
+
+        const visited = new Set<T>();
+        const result: T[] = [];
+
+        const dfsHelper = (vertex: T) => {
+            visited.add(vertex);
+            result.push(vertex);
+
+            for (const neighbor of this.vertices.get(vertex)!) {
+                if (!visited.has(neighbor)) {
+                    dfsHelper(neighbor);
+                }
+            }
+        };
+
+        dfsHelper(startVertex);
+        return result;
+    }
+   //   
+
+
 }
