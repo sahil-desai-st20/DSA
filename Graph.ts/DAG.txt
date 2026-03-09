@@ -1,0 +1,19 @@
+directed acycle graphs (DAG)
+a graph  whch has  directed edges and no cycle 
+all tree automatic dag 
+-- in this find    short as  part -- 
+ sssp-sinlge soucre shotst path 
+  first take all nodde iinn arbity wise(A-Z)
+  then use like dijksha alg  and eacch node one by one 
+
+--- longest path --
+same as shorts path do only one thing 
+all edges   mutple by -1  means 
+if a=2 then a=-2 
+then us e shots path alg afteer givee reslut value for example is -23 then muiptlly by -1 
+
+
+SSSP SMALR OR TYPE 
+1 dijksha -for potivte 
+2 Bellman Ford Algorithm  - for netive 
+3 floyd Warshall

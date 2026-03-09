@@ -1,0 +1,13 @@
+a ordering of the nodes in directed graph  were for each directed edges form node a to node B  A appers before B 
+time =o(V+E)
+is not unique ordering meas give mutilple answer in soritng possible 
+  
+
+topological soritng alg 
+ pick any un visted node 
+ use dfs one that 
+  when callback(backtracking ) add that node in to in last on sorting  
+  go up to when all node cover 
+  store in adjancy list 
+  note- you can pick another node if one bolck or not left any negihouers
+  
