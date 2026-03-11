@@ -1,7 +1,0 @@
-  ts -https://www.youtube.com/@luckyreactjs/playlists
-  github copilet agents doc -https://docs.github.com/en/copilot/concepts/agents
-  alg - https://www.youtube.com/watch?v=09_LlHjoEiY
-  adn readd pdf alg
-  docs-antigvity,vs code ,jules 
-  mcp server and  hookks 
-  
